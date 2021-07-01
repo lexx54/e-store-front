@@ -21,8 +21,7 @@ const Slider = () => {
   },[movement])
 
   return (
-    <Grid height="350px" templateColumns="repeat(3,100%)"
-    border="1px" borderColor="red">
+    <Grid height="350px" templateColumns="repeat(3,100%)">
     <Box className="slide" style={boxStyle}>
       <Image src="https://picsum.photos/800/400" alt="Slider image" style={imgStyle}/>
     </Box>

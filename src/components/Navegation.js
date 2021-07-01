@@ -1,13 +1,15 @@
-import { Flex, Spacer , Input, InputRightAddon, InputGroup, Icon } from "@chakra-ui/react"
+import { Flex, Spacer , Input, InputRightAddon, InputGroup, Icon,Text } from "@chakra-ui/react"
 import {SearchIcon} from "@chakra-ui/icons";
 import {FiShoppingCart} from "react-icons/fi"
 
 const Navegation = () => {
 
   return (
-    <Flex as="nav" direction="column"  bg="blue.600" color="white">
+    <Flex as="nav" direction="column"  bg="blue.600" color="white" pos="sticky">
       <Flex flex="1" px={["1rem",undefined,"2rem"]} py=".7rem">
-        <Flex align="center" px="0.5rem">Logo</Flex>
+        <Flex align="center" px="0.5rem">
+          <Text fontSize="3xl">Logo</Text>
+          </Flex>
         <Spacer/>
         <Flex align="center" px="0.5rem">Contact</Flex>
         <Flex align="center" px="0.5rem">Register</Flex>

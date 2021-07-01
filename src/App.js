@@ -7,7 +7,7 @@ import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 import Categories from "./pages/Categories";
 import Navegation from './components/Navegation';
-
+import Footer from "./components/Footer";
 
 //Green 400 500 Blue 700 red 600
 const App = () => {
@@ -25,7 +25,9 @@ const App = () => {
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/payment" component={Payment}></Route>
       </Switch>
+      <Footer />
     </Router>
+    
   )
 };
 
