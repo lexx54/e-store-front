@@ -4,7 +4,7 @@ import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
 
 const Register = () => {
-  const { path, url } = useRouteMatch();
+  const { path} = useRouteMatch();
   const {state} = useParams();
   return (
     <Flex direction="column" align="center" justify="center" height="100vh">
