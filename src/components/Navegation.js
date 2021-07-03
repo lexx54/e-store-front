@@ -1,6 +1,7 @@
 import { Flex, Spacer , Input, InputRightAddon, InputGroup, Icon,Text } from "@chakra-ui/react"
 import {SearchIcon} from "@chakra-ui/icons";
-import {FiShoppingCart} from "react-icons/fi"
+import {FiShoppingCart} from "react-icons/fi";
+import {Link} from "react-router-dom";
 
 const Navegation = () => {
 
@@ -8,11 +9,15 @@ const Navegation = () => {
     <Flex as="nav" direction="column"  bg="blue.600" color="white" pos="sticky">
       <Flex flex="1" px={["1rem",undefined,"2rem"]} py=".7rem">
         <Flex align="center" px="0.5rem">
-          <Text fontSize="3xl">Logo</Text>
+          <Text fontSize="3xl">
+            <Link to="/">Logo</Link>  
+          </Text>
           </Flex>
         <Spacer/>
         <Flex align="center" px="0.5rem">Contact</Flex>
-        <Flex align="center" px="0.5rem">Register</Flex>
+        <Flex align="center" px="0.5rem">
+          <Link to="/register/in"> Register </Link>
+        </Flex>
         <Flex align="center" px="0.5rem">Location</Flex>
       </Flex>
 

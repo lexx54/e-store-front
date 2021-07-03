@@ -17,7 +17,9 @@ const Slider = () => {
     movement === -200
       ? timer = setTimeout(()=>{setMovement(prev=> 0)},5000)
       : timer = setTimeout(()=>{setMovement(prev=>prev-100)},5000); 
-    return timer;
+    return ()=>{
+      clearTimeout(timer);
+    };
   },[movement])
 
   return (
