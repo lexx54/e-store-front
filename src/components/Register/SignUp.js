@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {Flex, Button} from "@chakra-ui/react";
-import FormInput from "./FormInput";
+import FormInput from "../FormInput";
 import {Controller, useForm } from "react-hook-form";
 
 

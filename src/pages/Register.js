@@ -1,7 +1,7 @@
 import { useRouteMatch,Switch, Route, useParams } from "react-router";
 import {Flex} from "@chakra-ui/react";
-import SignIn from "../components/SignIn";
-import SignUp from "../components/SignUp";
+import SignIn from "../components/Register/SignIn";
+import SignUp from "../components/Register/SignUp";
 
 const Register = () => {
   const { path} = useRouteMatch();
